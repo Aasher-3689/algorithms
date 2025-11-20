@@ -41,3 +41,31 @@ int main()
     ) after looping, final i or j index value if equal to x, position is i+1 or j+1
       , adding one because index start from 0.
 */
+
+// Time complexity:
+/*
+    1) location = 0 >>>>> O(1)
+    2) i = 0 >>>>> O(1)
+    3) j = len(array) - 1 >>>>> O(1)
+    
+    ) mid = int((i + j) / 2) >>> O(1)
+    ) i = mid + 1 >>>> O(1) ||| j = mid >>>> O(1)
+    ) overall O(1) for one iteration.
+
+    ) no. of iterations w.r.t size?
+    ) first iteration: n
+    ) 2nd iteration: n/2 = n/2¹
+    ) 3rd iteration: n/4 = n/2²
+    ) ...
+    ) last iteration: n/2ᵏ = 1 (at the end size remains one)
+    ) solving for k:
+    ) 2ᵏ = n
+    ) k = log₂n
+
+    ) for one iteration O(1)
+    4) for log₂n times O(1) = log₂n
+    5) location = i + 1 >>>>> O(1)
+    6) return O(1)
+
+    Result) log₂n = Dominant = Time Complexity
+*/
