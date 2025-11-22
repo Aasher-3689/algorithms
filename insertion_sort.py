@@ -34,7 +34,7 @@ print(sort_ascending(array))
          leftside elements.
        - for  i=1, there is only one index at left i.e, 0
        - for  i=2, there are two indexes at left i.e, 0,1
-       - is not its means, we want to move inner loop upto (i-1)th time? exactly.
+       - is not its means, we want to move inner loop upto (i-1)th index? exactly.
        - that's, what we did.
        - inside it we, write our main comparison, easily understandable.
 """
